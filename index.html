@@ -9,6 +9,43 @@
 </head>
 <body>
 
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">    
+        <div class="container-xxl">
+            <a href="intro" class="navbar-brand">
+                <span class="fw-bold text-white">
+                    BootStrap-လို တို ရှင်း
+                </span>
+            </a>
+
+    <!--Toggle Button-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#Main-nav" aria-controls="Main-nav" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!--NavBar links-->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="Main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#topics" class="nav-link">About The Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reviews" class="nav-link">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Get to Touch</a>
+                    </li>
+                    <li class="nav-item d-md-none">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li>
+                    <li class="nav-item ms-2 d-none d-md-inline">
+                        <a href="#topics" class="btn btn-secondary">Buy Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!--image And intro-->
     <section id="intro">
         <div class="container-lg">
@@ -27,6 +64,156 @@
             </div>
         </div>
     </section>
+
+    <!--pricing plans-->
+    <section id="pricing" class="bg-light my-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Pricing Plans</h2>
+                <p class="lead text-muted">Choose a pricing plan to suit you</p>
+            </div>
+        </div>
+
+        <div class="row my-5 align-items-center justify-content-center">
+
+            <div class="col-7 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Starter Edition</h4>
+                        <p class="lead card-subtitle">Ebook download Only</p>
+                        <p class="display-5 text-primary fw-bold my-4">$12.08</p>
+                        <p class="card-text text-muted mx-5 d-none d-lg-block">The newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for creating responsive, mobile-first websites.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-7 col-lg-4 ">
+                <div class="card border-primary border-2">
+                    <div class="card-header text-center text-primary">Most Popular</div>
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Complete Edition</h4>
+                        <p class="lead card-subtitle">Ebook download & all update</p>
+                        <p class="display-5 text-primary fw-bold my-4">$18.39</p>
+                        <p class="card-text text-muted mx-5 d-none d-lg-block"> Yhe newest version of Bootstrap; with a smooth overhaul. However, Internet Explorer 11 and down is not supported, and jQuery is replaced with vanilla JavaScript.</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-7 col-lg-4 col-xl-3">
+                <div class="card border-0">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Ultimate Edition</h4>
+                        <p class="lead card-subtitle">Ebook download &</p>
+                        <p class="display-5 text-primary fw-bold my-4">$22.68</p>
+                        <p class="card-text text-muted mx-5 d-none d-lg-block">This is done thanks to Bootstrap's RFS resizing engine that scales common CSS properties to utilize available space better according to devices and viewpoint</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!--Topic-->
+        <section class="topics">
+            <div class="contaner-md">
+                <div class="text-center">
+                    <h2>Inside the book..</h2>
+                    <p class="lead text-mute">A quick glance at the topics you'll leran</p>
+                </div>
+            </div>
+
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+
+                <!--accordion-->
+                <div class="col-7 col-lg-8">
+             <div class="according" id="chapters">
+
+                    <div class="according-item">
+                        <h4 class="according-header" id="heading-1">
+                            <button class="according-button text-lg-start Chps" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                             Chapter-1 Your First web page</button>
+                        </h4>
+
+                        <div id="chapter-1" class="according-collapse collapse-show"
+                        aria-labelledby="heading-1" data-bs-parent="#chapters">
+                            <div class="card-body">
+                                <p>Bootstrap 5 is the newest version of Bootstrap; with new components, faster stylesheet and more <br>Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.</p>
+                                <p>The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to JavaScript instead of jQuery.<br>Note: Bootstrap 3 and Bootstrap 4 is still supported by the team for critical bugfixes and documentation changes, and it is perfectly safe to continue to use them. However, new features will NOT be added to them.</p>
+                            </div>
+                        </div>
+
+                        <div class="according-item">
+                            <h4 class="according-header" id="heading-2">
+                                <button class="according-button text-lg-start Chps" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
+                                 Chapter-2 Mastering CSS </button>
+                            </h4>
+    
+                            <div id="chapter-2" class="according-collapse collapse-show"
+                            aria-labelledby="heading-2" data-bs-parent="#chapters">
+                                <div class="card-body">
+                                    <p>Bootstrap 5 is the newest version of Bootstrap; with new components, faster stylesheet and more <br>Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.</p>
+                                    <p>The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to JavaScript instead of jQuery.<br>Note: Bootstrap 3 and Bootstrap 4 is still supported by the team for critical bugfixes and documentation changes, and it is perfectly safe to continue to use them. However, new features will NOT be added to them.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="according-item">
+                            <h4 class="according-header" id="heading-3">
+                                <button class="according-button text-lg-start Chps" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
+                                 Chapter-3 The Power of JavaScript </button>
+                            </h4>
+    
+                            <div id="chapter-3" class="according-collapse collapse-show"
+                            aria-labelledby="heading-3" data-bs-parent="#chapters">
+                                <div class="card-body">
+                                    <p>Bootstrap 5 is the newest version of Bootstrap; with new components, faster stylesheet and more <br>Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.</p>
+                                    <p>The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to JavaScript instead of jQuery.<br>Note: Bootstrap 3 and Bootstrap 4 is still supported by the team for critical bugfixes and documentation changes, and it is perfectly safe to continue to use them. However, new features will NOT be added to them.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="according-item">
+                            <h4 class="according-header" id="heading-4">
+                                <button class="according-button text-lg-start Chps" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#chapter-4" aria-expanded="true" aria-controls="chapter-4">
+                                 Chapter-4 The Storing DataBase </button>
+                            </h4>
+    
+                            <div id="chapter-4" class="according-collapse collapse-show"
+                            aria-labelledby="heading-4" data-bs-parent="#chapters">
+                                <div class="card-body">
+                                    <p>Bootstrap 5 is the newest version of Bootstrap; with new components, faster stylesheet and more <br>Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.</p>
+                                    <p>The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to JavaScript instead of jQuery.<br>Note: Bootstrap 3 and Bootstrap 4 is still supported by the team for critical bugfixes and documentation changes, and it is perfectly safe to continue to use them. However, new features will NOT be added to them.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="according-item">
+                            <h4 class="according-header" id="heading-5">
+                                <button class="according-button text-lg-start Chps" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#chapter-5" aria-expanded="true" aria-controls="chapter-5">
+                                 Chapter-5 User Authentication </button>
+                            </h4>
+    
+                            <div id="chapter-5" class="according-collapse collapse-show"
+                            aria-labelledby="heading-5" data-bs-parent="#chapters">
+                                <div class="card-body">
+                                    <p>Bootstrap 5 is the newest version of Bootstrap; with new components, faster stylesheet and more <br>Bootstrap 5 supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.</p>
+                                    <p>The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to JavaScript instead of jQuery.<br>Note: Bootstrap 3 and Bootstrap 4 is still supported by the team for critical bugfixes and documentation changes, and it is perfectly safe to continue to use them. However, new features will NOT be added to them.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+         </div>
+        </section> 
+
     <script src="script.js"></script>
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
